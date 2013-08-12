@@ -47,9 +47,9 @@ if has('gui_macvim')
     colorscheme hybrid
 endif
 
-"syntax enable
-"set background=dark
-"colorscheme solarized
+syntax enable
+set background=dark
+colorscheme solarized
 
 set gfn=Consolas:h15
 set gfw=HiraMaruPro-W4:h14
@@ -68,7 +68,7 @@ map <C-l> <C-w>l
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
 " バッファリスト
-nmap call <SID>dash(expand('<cword>'))<CR><Space>b :ls<CR>:buffer 
+nmap <Space>b :ls<CR>:buffer 
 nnoremap ,c <ESC><Space>:!ctags -R<CR><CR>
 
 if has('gui_macvim')
