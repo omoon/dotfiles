@@ -21,6 +21,7 @@ NeoBundle 'ZenCoding.vim'
 NeoBundle 'ref.vim'
 
 NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on
 
@@ -41,8 +42,14 @@ set guioptions-=T
 set nobackup
 set noswapfile
 
-let g:hybrid_use_Xresources = 1
-colorscheme hybrid
+if has('gui_macvim')
+    let g:hybrid_use_Xresources = 1
+    colorscheme hybrid
+endif
+
+"syntax enable
+"set background=dark
+"colorscheme solarized
 
 set gfn=Consolas:h15
 set gfw=HiraMaruPro-W4:h14
