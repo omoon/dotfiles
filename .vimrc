@@ -26,8 +26,6 @@ filetype plugin indent on
 
 sy on
 
-let php_folding=1 
-
 set hidden
 set nu
 set cursorline
