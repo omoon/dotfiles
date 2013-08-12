@@ -26,6 +26,8 @@ filetype plugin indent on
 
 sy on
 
+let php_folding=1 
+
 set hidden
 set nu
 set cursorline
@@ -44,7 +46,7 @@ set noswapfile
 let g:hybrid_use_Xresources = 1
 colorscheme hybrid
 
-set gfn=Consolas:h16
+set gfn=Consolas:h15
 set gfw=HiraMaruPro-W4:h14
 
 "表示行単位で行移動する
@@ -61,7 +63,8 @@ map <C-l> <C-w>l
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
 " バッファリスト
-nmap <Space>b :ls<CR>:buffer 
+nmap call <SID>dash(expand('<cword>'))<CR><Space>b :ls<CR>:buffer 
+nnoremap ,c <ESC><Space>:!ctags -R<CR><CR>
 
 if has('gui_macvim')
     set transparency=10	" 透明度を指定
