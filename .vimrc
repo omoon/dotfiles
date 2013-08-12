@@ -47,9 +47,9 @@ if has('gui_macvim')
     colorscheme hybrid
 endif
 
-syntax enable
-set background=dark
-colorscheme solarized
+"syntax enable
+"set background=dark
+"colorscheme solarized
 
 set gfn=Consolas:h15
 set gfw=HiraMaruPro-W4:h14
