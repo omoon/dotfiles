@@ -116,3 +116,4 @@ endfunction
 command! -nargs=* Dash call <SID>dash(<f-args>)
 
 nnoremap <Space>d :call <SID>dash(expand('<cword>'))<CR>
+nnoremap <Space>n :NERDTreeToggle<CR>
