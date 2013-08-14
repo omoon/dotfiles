@@ -22,6 +22,7 @@ NeoBundle 'ref.vim'
 
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'YankRing.vim'
 
 filetype plugin indent on
 
@@ -41,6 +42,8 @@ set autoindent
 set guioptions-=T
 set nobackup
 set noswapfile
+
+let php_sql_query = 1
 
 if has('gui_macvim')
     let g:hybrid_use_Xresources = 1
