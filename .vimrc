@@ -23,6 +23,7 @@ NeoBundle 'ref.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'YankRing.vim'
+NeoBundle 'phpfolding.vim'
 
 filetype plugin indent on
 
