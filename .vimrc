@@ -70,6 +70,14 @@ map <C-l> <C-w>l
 " ステイタス行に文字コードと改行コードを表示。
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
+" command mode 時 tcsh風のキーバインドに
+cmap <C-A> <Home>
+cmap <C-F> <Right>
+cmap <C-B> <Left>
+cmap <C-D> <Delete>
+cmap <Esc>b <S-Left>
+cmap <Esc>f <S-Right>
+
 " バッファリスト
 nmap <Space>b :ls<CR>:buffer 
 nnoremap ,c <ESC><Space>:!ctags -R<CR><CR>
