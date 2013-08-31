@@ -23,6 +23,7 @@ NeoBundle 'ref.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'YankRing.vim'
+NeoBundle 'phpfolding.vim'
 
 filetype plugin indent on
 
@@ -42,6 +43,8 @@ set autoindent
 set guioptions-=T
 set nobackup
 set noswapfile
+
+let php_sql_query = 1
 
 if has('gui_macvim')
     let g:hybrid_use_Xresources = 1
@@ -67,6 +70,14 @@ map <C-l> <C-w>l
 
 " ステイタス行に文字コードと改行コードを表示。
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+
+" command mode 時 tcsh風のキーバインドに
+cmap <C-A> <Home>
+cmap <C-F> <Right>
+cmap <C-B> <Left>
+cmap <C-D> <Delete>
+cmap <Esc>b <S-Left>
+cmap <Esc>f <S-Right>
 
 " バッファリスト
 nmap <Space>b :ls<CR>:buffer 
