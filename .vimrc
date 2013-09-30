@@ -24,6 +24,7 @@ NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'YankRing.vim'
 NeoBundle 'phpfolding.vim'
+NeoBundle 'beyondwords/vim-twig'
 
 filetype plugin indent on
 
@@ -43,6 +44,7 @@ set autoindent
 set guioptions-=T
 set nobackup
 set noswapfile
+autocmd BufNewFile,BufRead *.twig set filetype=html.twig
 
 let php_sql_query = 1
 
