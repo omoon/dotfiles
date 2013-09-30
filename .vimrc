@@ -86,6 +86,9 @@ nmap <Space>b :ls<CR>:buffer
 nnoremap ,c <ESC><Space>:!ctags -R<CR><CR>
 nnoremap ,ca <ESC><Space>:!ctags -R --append<CR><CR>
 
+" ハイライト消し
+nnoremap ,nh <ESC><Space>:nohl<CR><CR>
+
 if has('gui_macvim')
     set transparency=10	" 透明度を指定
     set antialias
