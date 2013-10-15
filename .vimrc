@@ -26,6 +26,8 @@ NeoBundle 'YankRing.vim'
 NeoBundle 'phpfolding.vim'
 NeoBundle 'beyondwords/vim-twig'
 
+NeoBundle 'Simple-Javascript-Indenter'
+
 filetype plugin indent on
 
 sy on
@@ -69,6 +71,8 @@ vmap k gk
 "ウインドウの横移動
 map <C-h> <C-w>h
 map <C-l> <C-w>l
+map <C-j> <C-w>j
+map <C-k> <C-w>k
 
 " ステイタス行に文字コードと改行コードを表示。
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
