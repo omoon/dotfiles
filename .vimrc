@@ -24,7 +24,9 @@ NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'YankRing.vim'
 NeoBundle 'phpfolding.vim'
-NeoBundle 'editorconfig/editorconfig-vim'
+"NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'beyondwords/vim-twig'
+NeoBundle 'Simple-Javascript-Indenter'
 
 filetype plugin indent on
 
@@ -44,6 +46,7 @@ set autoindent
 set guioptions-=T
 set nobackup
 set noswapfile
+autocmd BufNewFile,BufRead *.twig set filetype=html.twig
 
 let php_sql_query = 1
 
@@ -68,6 +71,8 @@ vmap k gk
 "ウインドウの横移動
 map <C-h> <C-w>h
 map <C-l> <C-w>l
+map <C-j> <C-w>j
+map <C-k> <C-w>k
 
 " ステイタス行に文字コードと改行コードを表示。
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
