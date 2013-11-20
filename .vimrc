@@ -77,6 +77,10 @@ map <C-k> <C-w>k
 " ステイタス行に文字コードと改行コードを表示。
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
+" ステイタス行に現在時刻を表示
+let ltime = strftime("%x %H:%M")
+set statusline+=\ \%{ltime}
+
 " command mode 時 tcsh風のキーバインドに
 cmap <C-A> <Home>
 cmap <C-F> <Right>
