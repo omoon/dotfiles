@@ -105,8 +105,8 @@ if has('gui_macvim')
     set imdisable		" IMを無効化
 
     "フルスクリーンモード	
-    set fuoptions=maxvert,maxhorz
-    autocmd GUIEnter * set fullscreen 
+    "set fuoptions=maxvert,maxhorz
+    "autocmd GUIEnter * set fullscreen 
 
 endif
 
